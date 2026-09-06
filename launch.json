@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "msedge",
+      "request": "launch",
+      "name": "Open Website",
+      "url": "file:///c:/RileyYY/KGV/Year%209/Vs%20Code/.vscode/index.html",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
