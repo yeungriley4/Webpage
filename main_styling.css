@@ -76,6 +76,16 @@ img {
 
 .about-div,
 .services-div,
+#buttonid {
+  padding: 40px 20px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+
 .contact-div {
   background-color: #6274a1;
   padding: 40px 20px;
@@ -148,6 +158,6 @@ img {
 }
 
 #about {
-  padding: 10%;
+  padding: 16px;
   background: linear-gradient(to right, #959aa9, #7787c7);
 }
