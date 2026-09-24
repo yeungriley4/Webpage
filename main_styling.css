@@ -74,9 +74,9 @@ img {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-.about-section,
-.services-section,
-.contact-section {
+.about-div,
+.services-div,
+.contact-div {
   background-color: #6274a1;
   padding: 40px 20px;
   text-align: center;
@@ -86,15 +86,15 @@ img {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
 
-.about-section h2,
-.services-section h2,
-.contact-section h2 {
+.about-div h2,
+.services-div h2,
+.contact-div h2 {
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
 
-.signin-section {
+.signin-div {
   padding: 40px 20px 80px;
 }
 
