@@ -52,3 +52,16 @@ body {
 #main div {
   flex: 1;
 }
+
+.navbar{
+  padding: 8px 20px;
+  font-size: 14px
+}
+
+.navlinks {
+  gap: 12px;
+}
+
+.navlinks a {
+  font-size: 13px;
+}
