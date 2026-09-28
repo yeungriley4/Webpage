@@ -53,15 +53,16 @@ body {
   flex: 1;
 }
 
-.navbar{
-  padding: 8px 20px;
-  font-size: 14px
+
+.navbar {
+  padding: 20px 40px !important;
+  font-size: 16px !important;
 }
 
-.navlinks {
-  gap: 12px;
+.navbar .logo {
+  font-size: 1.5rem;
 }
 
-.navlinks a {
-  font-size: 13px;
+.nav-links a {
+  font-size: 1rem;
 }
