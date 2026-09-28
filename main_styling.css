@@ -84,6 +84,7 @@ img {
   max-width: 900px;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(to right, #959aa9, #7787c7);
 }
 
 .about-div h2,
@@ -145,9 +146,4 @@ img {
 
 .btn:hover {
   background-color: #1d4ed8;
-}
-
-#about {
-  padding: 10%;
-  background: linear-gradient(to right, #959aa9, #7787c7);
 }

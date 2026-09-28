@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 16px;
+  padding: 16px;
+  background-image: linear-gradient(75deg, #899ca8, #7db1d6);
+}
+
+.app-screen {
+    background-color: aliceblue;
+    min-width: 30%;
+    min-height: 90%;
+}
