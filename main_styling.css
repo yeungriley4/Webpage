@@ -1,182 +1,189 @@
-/* Base styles */
+/*Variables*/
 :root {
-  --bg-light: #f7fafc;
-  --bg-soft: #edf2f7;
-  --panel-white: #ffffff;
-  --text-dark: #1a202c;
-  
-  --text-muted: #4a5568;
-  --primary: #2563eb;
-  --primary-dark: #1d4ed8;
+    --bg-light: #f7fafc;
+    --bg-soft: #edf2f7;
+    --panel-white: #ffffff;
+    --text-dark: #1a202c;
 
-  --border: #e2e8f0;
-  --input-border: #cbd5e0;
-  --shadow-soft: rgba(0, 0, 0, 0.05);
-  --shadow-strong: rgba(0, 0, 0, 0.1);
-}
+    --text-muted: #4a5568;
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
 
-* {
-  box-sizing: border-box;
+    --border: #e2e8f0;
+    --input-border: #cbd5e0;
+    --shadow-soft: rgba(0, 0, 0, 0.05);
+    --shadow-strong: rgba(0, 0, 0, 0.1);
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  color: var(--text-dark);
-  background: linear-gradient(180deg, var(--bg-light) 0%, var(--bg-soft) 100%);
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box; /*Redundant?*/
+
+    background: linear-gradient( 
+        180deg,
+        var(--bg-light) 0%,
+        var(--bg-soft) 100%
+    );
+
+    color: var(--text-dark);
+
+    font-family: Arial, sans-serif;
+    font-size: clamp(8px, 1.5vw, 32px);
 }
 
 img {
-  display: block;
-  max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
-/* Navigation */
+
+/*Note unify vw, px, and others*/
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 20px 40px;
-  background-color: var(--panel-white);
-  border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    background-color: var(--panel-white);
+    border-bottom: 1px solid var(--border);
 }
 
 .logo {
-  font-size: 28px;
-  font-weight: bold;
-  color: var(--primary);
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary);
 }
 
 .nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .nav-links a {
-  color: var(--text-muted);
-  font-weight: bold;
-  text-decoration: none;
+    color: var(--text-muted);
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .nav-links a:hover {
-  color: var(--primary);
+    color: var(--primary);
 }
 
 /* Hero */
 .hero {
-  padding: 60px 20px 40px;
-  text-align: center;
+    padding: 60px 20px 40px;
+    text-align: center;
 }
 
 .hero h1 {
-  margin-bottom: 12px;
-  font-size: clamp(2rem, 4vw, 3.5rem);
+    margin-bottom: 12px;
+    font-size: clamp(2rem, 4vw, 3.5rem);
 }
 
 .hero p {
-  margin-bottom: 24px;
-  font-size: 1.1rem;
-  color: var(--text-muted);
+    margin-bottom: 24px;
+    font-size: 1.1rem;
+    color: var(--text-muted);
 }
 
 .hero img {
-  width: 100%;
-  max-width: 600px;
-  margin: 20px auto 0;
-  border-radius: 12px;
-  box-shadow: 0 15px 30px var(--shadow-strong);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto 0;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px var(--shadow-strong);
 }
 
 /* Content sections */
 .about-div,
 .services-div,
 #buttonid {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 40px 20px;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px var(--shadow-soft);
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px var(--shadow-soft);
 }
 
 .contact-div {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 40px 20px;
-  text-align: center;
-  border-radius: 12px;
-  background-color: #6274a1;
-  box-shadow: 0 8px 24px var(--shadow-soft);
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: #6274a1;
+    box-shadow: 0 8px 24px var(--shadow-soft);
 }
 
 .about-div h2,
 .services-div h2,
 .contact-div h2 {
-  margin-bottom: 10px;
-  font-size: 2rem;
+    margin-bottom: 10px;
+    font-size: 2rem;
 }
 
 #about {
-  padding: 16px;
-  background: linear-gradient(to right, #959aa9, #7787c7);
+    padding: 16px;
+    background: linear-gradient(to right, #959aa9, #7787c7);
 }
 
 /* Sign-in form */
 .signin-div {
-  padding: 40px 20px 80px;
+    padding: 40px 20px 80px;
 }
 
 .card {
-  width: min(100%, 360px);
-  margin: 0 auto;
-  padding: 30px;
-  background-color: var(--panel-white);
-  border: 1px solid #dfe7ef;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    width: min(100%, 360px);
+    margin: 0 auto;
+    padding: 30px;
+    background-color: var(--panel-white);
+    border: 1px solid #dfe7ef;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
 .card h2 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .card label {
-  display: block;
-  margin-top: 12px;
-  margin-bottom: 6px;
-  font-weight: bold;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-weight: bold;
 }
 
 .card input {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px 12px;
-  font-size: 1rem;
-  border: 1px solid var(--input-border);
-  border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 18px;
-  padding: 12px 22px;
-  border: none;
-  border-radius: 8px;
-  background-color: var(--primary);
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .btn:hover {
-  background-color: var(--primary-dark);
+    background-color: var(--primary-dark);
 }
